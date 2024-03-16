@@ -1,17 +1,12 @@
-package com.gsoftcode.formonlines.entities;
+package com.gsoftcode.formonlines.dto;
 
-
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
 import lombok.Data;
 
 import java.util.Date;
 
-@Entity
 @Data
-public class FormUser {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class RequestDTO {
 
     private Long id;
 
@@ -25,9 +20,9 @@ public class FormUser {
     @Column(length = 5000)
     private String message;
 
-    private int number;
+    private int nomber;
 
-    private String example;
+    private String exemple;
 
     private String delai;
 
@@ -38,9 +33,5 @@ public class FormUser {
     private Long phone;
 
     private Date date;
-
-
-
-
 
 }
